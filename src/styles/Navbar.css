@@ -1,0 +1,11 @@
+.navbar {
+    width: 100vw;
+    height: 5vh;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 3vw;
+    padding: 1.5vh 1.5vw;
+    overflow: hidden;
+}

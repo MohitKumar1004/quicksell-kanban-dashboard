@@ -1,0 +1,18 @@
+.columns{
+    display: inline-block;
+    margin: 1vw;
+    height: 80vh;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    max-height: 80vh;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.cards::-webkit-scrollbar {
+    display: none;
+}

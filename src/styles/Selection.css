@@ -1,0 +1,10 @@
+.select-title{
+    color: grey;
+    font-size: 1.3rem;
+}
+
+.select-area{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
