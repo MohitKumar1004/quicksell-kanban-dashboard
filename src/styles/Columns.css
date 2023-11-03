@@ -1,5 +1,6 @@
 .columns{
     display: inline-block;
+    padding: 0.4vh 0.4vw;
     margin: 1vw;
     height: 78vh;
 }
@@ -13,8 +14,7 @@
     flex-direction: column;
     max-height: 75vh;
     align-items: center;
-    justify-content: center;
-    overflow-y: auto;
+    justify-content: flex-start;
     overflow-x: hidden;
 }
 
