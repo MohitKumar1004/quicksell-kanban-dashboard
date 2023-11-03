@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/quicksell-kanban-dashboard/static/css/main.5e8ed94c.css",
+    "main.css": "/quicksell-kanban-dashboard/static/css/main.f7d63139.css",
     "main.js": "/quicksell-kanban-dashboard/static/js/main.c56d51e7.js",
     "static/js/787.db1e8586.chunk.js": "/quicksell-kanban-dashboard/static/js/787.db1e8586.chunk.js",
     "static/media/remixicon.woff": "/quicksell-kanban-dashboard/static/media/remixicon.affd60ca37df38cfee4f.woff",
     "index.html": "/quicksell-kanban-dashboard/index.html",
-    "main.5e8ed94c.css.map": "/quicksell-kanban-dashboard/static/css/main.5e8ed94c.css.map",
+    "main.f7d63139.css.map": "/quicksell-kanban-dashboard/static/css/main.f7d63139.css.map",
     "main.c56d51e7.js.map": "/quicksell-kanban-dashboard/static/js/main.c56d51e7.js.map",
     "787.db1e8586.chunk.js.map": "/quicksell-kanban-dashboard/static/js/787.db1e8586.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5e8ed94c.css",
+    "static/css/main.f7d63139.css",
     "static/js/main.c56d51e7.js"
   ]
 }
