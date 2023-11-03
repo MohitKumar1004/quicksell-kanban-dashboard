@@ -1,18 +1,33 @@
 .columns{
     display: inline-block;
     margin: 1vw;
-    height: 80vh;
+    height: 78vh;
+}
+
+.col-title{
+    margin-bottom: 1vh;
 }
 
 .cards{
     display: flex;
     flex-direction: column;
-    max-height: 80vh;
+    max-height: 75vh;
     align-items: center;
     justify-content: center;
     overflow-y: auto;
     overflow-x: hidden;
 }
+
 .cards::-webkit-scrollbar {
     display: none;
+}
+
+@media only screen and (max-width: 425px) {
+    .columns {
+        height: 100%;
+    }
+    .cards {
+        height: 100%;
+        max-height: none;
+    }
 }

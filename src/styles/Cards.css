@@ -3,6 +3,10 @@
     margin-top: 4vh;
 }
 
+.card:first-child {
+    margin-top: 0;
+}
+
 .card-id {
     color: grey;
 }
@@ -15,6 +19,14 @@ p {
     display: flex;
     flex-wrap: wrap;
     gap:5px;
+}
+
+.tags {
+    color: grey;
+}
+
+[class~="tags"][class~="box"]{
+    padding: 0.5vh 0.5vw;
 }
 
 @media only screen and (max-width: 768px) {

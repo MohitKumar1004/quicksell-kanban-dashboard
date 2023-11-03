@@ -7,7 +7,7 @@ export default function Columns(props) {
 
     return (
         <div className="columns">
-            <div className="">
+            <div className="col-title">
                 <i className="fa fa-check"></i>&nbsp;{props.data[0]}
             </div>
             <div className="cards">
