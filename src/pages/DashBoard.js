@@ -1,12 +1,19 @@
 import React, { useEffect, useState } from 'react'   
-import Navbar from '../components/Navbar'
-import '../styles/DashBoard.css'
-import Board from '../components/Board'
 import axios from 'axios'
-import { useOptionSelector } from '../hooks/useOptionSelector'
+
+// components
+import Navbar from '../components/Navbar'
+import Board from '../components/Board'
+
+// css
+import '../styles/DashBoard.css'
+
+// hooks
+import { useOptionSelector } from '../hooks/useOptionSelector' 
 
 export default function DashBoard() {
 
+  // Defining states
   const [data, setData] = useState({ tickets: [], users: [] })
   const [result, setResult] = useState([])
 
@@ -28,11 +35,13 @@ export default function DashBoard() {
 
   const [groupTickets, orderTickets] = useOptionSelector()
 
+  // Saving group and order type to localStorage
   useEffect(() => {
       localStorage.setItem('group', group)
       localStorage.setItem('order', order)
   },[group,order])
 
+  // Creating fetch api function to fetch api using axios
   const fetchData = async() => {
     try {
         const apiData = await axios.get('https://api.quicksell.co/v1/internal/frontend-assignment')
@@ -41,18 +50,17 @@ export default function DashBoard() {
     catch(error) {
         console.error(error)
     }
-}
+  }
+
+  // Fetching api dynamically
   useEffect(() => {
     fetchData()
   },[])
 
+  // Setting result with grouping and sorting for display of fetched data using custom useOptionSelector hook
   useEffect(() => {
-    console.log(group)
-    console.log(data.tickets)
     setResult(Object.entries(orderTickets(order, groupTickets(group, data.tickets, data.users))))
-    console.log(groupTickets(group, data.tickets, data.users))
-    console.log(orderTickets(order, groupTickets(group, data.tickets, data.users)))
-  },[data, group, order])
+  },[data, group, order, orderTickets, groupTickets])
 
   return (
     <div className="dashboard">

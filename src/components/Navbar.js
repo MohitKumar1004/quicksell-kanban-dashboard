@@ -1,8 +1,12 @@
 import React from 'react'
+
+// components
 import DropDownList from '../utils/DropDownList'
+import DisplaySelection from '../utils/DisplaySelection'
+
+// css
 import '../styles/Navbar.css'
 import '../styles/Box.css'
-import DisplaySelection from '../utils/DisplaySelection'
 
 export default function Navbar({ group, order, setGroup, setOrder }) {
 

@@ -1,5 +1,6 @@
 export const useGroup = () => {
   
+    // Grouping on the basis of priority
     const groupByPriority = (tickets) => {
         const listdata = []
         const priority = ['No priority', 'Low', 'Medium', 'High', 'Urgent']
@@ -12,6 +13,7 @@ export const useGroup = () => {
         return listdata
       }
     
+    // Grouping on the basis of user
     const groupByUser = (tickets, users) => {
         const listdata = []
         tickets.forEach((ticket) => {
@@ -26,6 +28,7 @@ export const useGroup = () => {
         return listdata
     }
 
+    // Grouping on the basis of status
     const groupByStatus = (tickets) => {
         const listdata = []
         tickets.forEach((ticket) => {

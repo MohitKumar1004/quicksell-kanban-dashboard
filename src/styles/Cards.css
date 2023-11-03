@@ -1,6 +1,7 @@
 .card {
     width: 15vw;
-    margin-top: 4vh;
+    margin-top: 2vh;
+    z-index: 98;
 }
 
 .card:first-child {

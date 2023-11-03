@@ -2,6 +2,7 @@ import React from 'react'
 import '../styles/Cards.css'
 
 export default function Cards(props) {
+  
   return (
     <div className="card box">
       <p className="card-id">{props.data.id}</p>
@@ -13,7 +14,7 @@ export default function Cards(props) {
         {
           props.data.tag.map((element,key) => {
           return <i key={key} className="box tags">
-              <i class="fa-solid fa-circle tags"></i>&nbsp;{element}
+              <i className="fa-solid fa-circle tags"></i>&nbsp;{element}
             </i>
           })
         }

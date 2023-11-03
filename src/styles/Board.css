@@ -7,6 +7,13 @@
     justify-content: center;
     margin: 1vh 0.5vw;
     overflow-y: auto;
+    transition: transform 1s;
+    transform: translateY(100%);
+    z-index: -4;
+}
+
+.board.slide-in{
+    transform: translateY(0%);
 }
 
 @media only screen and (max-width: 768px) {

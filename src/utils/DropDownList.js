@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+
+// components
 import DisplayButton from '../components/DisplayButton'
 import DisplayBox from './DisplayBox'
 
@@ -17,7 +19,7 @@ export default function DropDownList(props) {
 
     return (
         <div>
-            <DisplayButton clickToDropdown={clickToDropdown}/>
+            <DisplayButton clickToDropdown={clickToDropdown} dropdown={dropdown}/>
             <DisplayBox dropdown={dropdown}>
                 {props.children}
             </DisplayBox>

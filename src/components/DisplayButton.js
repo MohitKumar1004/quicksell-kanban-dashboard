@@ -5,7 +5,7 @@ import Arrow from '../utils/Arrow'
 export default function DisplayButton(props) {
   return (
     <button onClick = {props.clickToDropdown} className="box" style={{margin: '0.5vh 2vw'}}>
-        Display&nbsp;&nbsp;<Arrow type="down"/>
+        Display&nbsp;&nbsp;<Arrow type={(props.dropdown)?"down":"up"}/>
     </button>
   )
 }

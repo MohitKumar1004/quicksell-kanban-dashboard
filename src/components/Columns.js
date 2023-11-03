@@ -4,7 +4,6 @@ import '../styles/Columns.css'
 
 export default function Columns(props) {
 
-
     return (
         <div className="columns">
             <div className="col-title">

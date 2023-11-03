@@ -1,5 +1,7 @@
 .display {
     position: absolute;
+    z-index: 99;
+    gap: 1vh;
 }
 
 .dropdown {
